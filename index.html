@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./assets/styles.css">
+	<script src="https://kit.fontawesome.com/b35dfa58ee.js" crossorigin="anonymous"></script>
+	<script src="assets/web.js"> </script>
+	<link href="https://fonts.googleapis.com/css2?family=Yrsa:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+	</style>
+	<title>Document</title>
+</head>
+
+<body>
+	<div class='header'>
+		<div class='hamburger'> <i class="fas fa-bars"></i> </div>
+		<a href="index.html"><img src='assets/images/logo.png' alt='logo' class='logo' /> </a>
+		<nav class='nav-menu'>
+			<div class='deskopMenu'>
+				<ul>
+					<li>
+						<div class='navMenu'>
+						 <span class='login'> Login </span>
+						  <i class="fas fa-smile"></i> 
+						  <i class="fas fa-caret-down"></i>
+							<div class='navDropdown'>
+								<ul>
+									<!-- <li class='navItem'> <button id='loginOpen' class='navItemText'>Login </button></li> -->
+									<li class='navItem'><a href='sign-up.html' class='navItemText'> Login</a></li>
+									<li class='navItem'><a href='sign-up.html' class='navItemText'> Sign Up</a></li>
+								</ul>
+							</div>
+						</div>
+						
+					</li>
+
+				</ul>
+			</div>
+			
+		</nav>
+	</div>
+	<div class='loginFormContainer'>
+	<div class='loginForm'>
+		<div class='flexContainer'>
+			<h1 class='postTitle'> Login</h1>
+			 <button id='loginClose'> <i class="fas fa-times" ></i> </button>
+		</div>
+		<form action="" method="" class=" input">
+			<input type='text' placeholder='Username' class='loginInput'>
+			<input type='password' placeholder='password' class='loginInput'>
+
+			<div class='buttonFlex2'><button type='' class='register loginStyle'> Login With Your Username</button> 
+			</div>
+			<div class='textDiv2'> <h3> OR </h3> </div>
+				<div class='buttonFlex'><button type='' class='registerFacebook loginStyle'>Login with Facebook </button> </div>
+		
+
+					<p> Recover Username/password </p>
+					<p> Don't have an accout? <a href='sign-up.html'> Sign Up </a></p>
+		</form>
+	</div>
+	</div>
+
+	<div class="miniHeader">
+		<input type="text" placeholder="Search for IDEYVEX post">
+		<span> <i class="fas fa-search"></i></span>
+
+	</div>
+	<div class='postStory'>
+		<h1 class='postTitle'> Submit Your Story</h1>
+		<form action="" method="post" class="postForm input">
+			<input type='text' placeholder='Your Nick Name' class='name'>
+
+			<div class='flexContainer'>
+				<select name="categories" id="categories" class='categories flexitem'>
+					<option value="" disabled selected>Choose Categories</option>
+					<option value=" ">Business</option>
+					<option value="">Day to Day</option>
+					<option value="">Family</option>
+					<option value="">Politics</option>
+					<option value="">Relationship</option>
+					<option value="">Schools</option>
+				</select>
+				<select name="gender" id="gender" class='flexitem'>
+					<option value="" disabled selected>Choose gender</option>
+					<option value=" ">Male</option>
+					<option value="">Female</option>
+				</select>
+			</div>
+			<textarea class='story' name="story" placeholder='Post Your Story...'></textarea>
+			<div class='flexContainer'>
+				<div class='flexitem'>
+					<p> Can't read the image? <a href="#"> Click here to refresh </a> </p>
+					<div class='recaptcha'> recaptcha text here</div>
+				</div>
+				<div class='flexitem'>
+					<p class='bold'> I'm Not a Robot </p>
+					<input type='text' placeholder='Place Enter Security Code' class='securityCode'>
+				</div>
+			</div>
+			<div class='buttonFlex'><button type='' class='submit'> I Dey Vex!</button> </div>
+		</form>
+	</div>
+
+
+	<div class='postItem'>
+		<div class='postFlexItem'>
+			<div class='postItemDiv'>
+				<img src='./assets/images/placeholder.png' alt='' class='postImage'> 
+			</div>
+			<!-- <img src='./assets/images/logo2.jpg' alt='' class='postImage'>
+		<img src='./assets/images/logo3.jpg' alt='' class='postImage'> -->
+			<div class='postContent'>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et
+					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip
+					ex ea commodo consequat.
+				</p>
+
+				<div class='socialMedia'>
+					<div> <i class="fab fa-facebook-square"></i></div>
+					<div> <i class="fab fa-twitter-square"></i></div>
+					<div> <i class="fas fa-star"></i></div>
+				</div>
+
+			</div>
+		</div>
+		
+		<div class='commentLike'>
+			<div class='commentStyle'> 
+			<!-- <i class="fas fa-comment-alt"> -->
+				<div class='comment'> 1000 </div>
+				<i class="fas fa-caret-down commentDown"></i>
+				<!-- <span class='number1'> 2</span> -->
+			<!-- </i> -->
+			
+		</div>
+			<div class="vexDiv">
+				<button class='vex'> You Suppose Vex </button>
+				<span class='number2'> 10 </span>
+
+			</div>
+			<div class="vexDiv vexDiv2">
+				<button class='vex'> No Vex </button>
+				<span class='number2'>1000 </span>
+
+			</div>
+		</div>
+		<div class='posterDetails'>  <span class='postBy'> By /</span> 
+		   <span>  <a href=''>UserName /</a></span>  
+			<span class='postBy'> Date  /</span> 
+			<span class='postBy'>  Country / </span>
+			 <span> <a href=''>Categories </a></span> 
+	   </div>
+</div>
+		</div>
+
+	</div>
+
+	
+	<div class='postItem'>
+		<div class='postFlexItem'>
+			<div class='postItemDiv'> </div>
+			<div class='postContent'>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et
+					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip
+					ex ea commodo consequat.
+				</p>
+
+				<div class='socialMedia'>
+					<div> <i class="fab fa-facebook-square"></i></div>
+					<div> <i class="fab fa-twitter-square"></i></div>
+					<div> <i class="fas fa-star"></i></div>
+				</div>
+
+			</div>
+		</div>
+		
+		<div class='commentLike'>
+			<div class='commentStyle'> 
+			<!-- <i class="fas fa-comment-alt"> -->
+				<div class='comment'> 40 </div>
+				<i class="fas fa-caret-down commentDown"></i>
+				<!-- <span class='number1'> 2</span> -->
+			<!-- </i> -->
+			
+		</div>
+			<div class="vexDiv">
+				<button class='vex'> You Suppose Vex </button>
+				<span class='number2'> 100 </span>
+
+			</div>
+			<div class="vexDiv vexDiv2">
+				<button class='vex'> No Vex </button>
+				<span class='number2'> 99 </span>
+
+			</div>
+		</div>
+ 			<div class='posterDetails'>  <span class='postBy'> By /</span> 
+				<span>  <a href=''>UserName /</a></span>  
+				 <span class='postBy'> Date  /</span> 
+				 <span class='postBy'>  Country / </span>
+	 			 <span> <a href=''>Categories </a></span> 
+			</div>
+	</div>
+	<div class='postItem postItemDiv2'> <p> That's all we've got for now </p></div>
+
+	<footer>
+		<div class='footerDiv1'> <p class='footerText'>  © 2021 IDEYVEX </p></div>
+		<div class='footerDiv2'> <a href='privacy-policy.html' class='footerText'>Privacy Policy </a></div>
+		<div class='footerDiv3'> <a href='terms-of-use.html' class='footerText'>Terms of Use </a></div>
+		<div class='footerDiv4'> <a href='contact-us.html' class='footerText'>Contact Us </a></div>
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,721 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    background-color: #ecf0f1;
+ 
+}
+a{
+    text-decoration: none;
+    color: #34495e;
+    font-size: 15px;
+    font-family: 'Open Sans Light', sans-serif;
+
+    
+}
+
+h1{
+    color: #363838;
+    font-size: 30px;
+    font-family: "Yrsa", Helvetica, Arial, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    font-weight: 500;
+}
+
+h2{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    
+   
+}
+h3{
+    color: #363838;
+    font-size: 20px;
+    font-family: "Yrsa", Helvetica, Arial, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    font-weight: 500;
+}
+
+p{
+    color: #34495e;
+    font-size: 15px;
+    font-family: 'Open Sans Light', sans-serif;
+    line-height: 25px;  
+
+}
+.bold{
+    font-weight: bold;
+}
+
+ul, li{
+    list-style-type: none;
+}
+.header{
+    background-color: #34495e;
+    /* background-color: #697683; */
+    /* background-color: #000080; */
+    padding: 0 15%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; 
+}
+
+.logo{
+    height: 40px;
+}
+.login{
+    font-family: "Yrsa", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #fff;
+    cursor: pointer;
+}
+.navDropdown{
+    display: none;
+    
+    
+}
+.navMenu{
+    position: relative;
+}
+
+.navMenu:hover .navDropdown{
+    display: block;
+    margin-top: 2px;
+    margin-left: -20px;
+    z-index: 1;
+    position: absolute;
+    top: 30px;
+    background-color: white;
+    box-shadow: 2px 2px 10px #76caf5;
+    border-radius: 5px;
+    padding: 10px 10px;
+    
+    
+}
+.navItem{
+    
+    padding: 10px 20px 0;
+    width: 90px;
+   
+}
+.navItemText{
+    font-family: "Yrsa", Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0 10px;
+}
+.fa-smile{
+    color: white;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.fa-caret-down, .fa-search {
+    color: white;
+    font-size: 16px;
+    
+}
+
+.fa-caret-down{
+ margin-top: -5px;
+}
+
+.miniHeader{
+    height: 60px;
+    background-color: #fff;
+    padding-right: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.miniHeader > input{
+    background-color: #ecf0f1;
+    color: #363838;
+    font-size: 14px;
+    padding: 8px 19px;
+    height: 20px;
+    border: 0 solid;
+    border-radius: 3px;
+    outline: none;
+}
+.miniHeader > span{
+    background-color: #34495e;
+    border: 0 solid;
+    border-radius: 3px;
+    padding: 8px 19px;
+    height: 20px;
+}
+.postStory{
+ background: white;
+ width:60%;
+ margin: 70px auto;
+ border-radius:3px ;
+ padding: 10px 20px 20px;
+ box-sizing: border-box;
+ 
+}
+/* @media only screen and (max-width: 768px) {
+    .postStory{
+        width: 300px;
+    }   
+}
+@media only screen and (max-width: 450px) {
+    .postStory{
+        width: 80%;
+    }
+} */
+
+.form{
+    width: 70%;
+    background-color: #fff;
+    margin: 50Px 0;
+    
+}
+
+.name{
+    border: 0;
+    color: #989c9e;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    margin: 14px 0;
+    padding: 14px;
+    font-size: 14px;
+
+}
+
+.formStyle:focus{
+    border: 1px solid #76caf5;
+}
+
+.space{
+    margin:  15px 0 ;
+}
+.securityCode2{
+    color: #989c9e;
+    background-color: #fff;
+    box-sizing: border-box;
+    outline: none;
+    padding: 14px;
+    font-size: 14px;
+    border: 1px solid #989c9e;
+    width: 48%;
+
+}
+.loginInput{
+    color: #989c9e;
+    background-color: #fff;
+    box-sizing: border-box;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #989c9e;
+    width: 100%;
+    margin: 10px 0;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #989c9e;
+}
+
+.story{
+    resize: none;
+    height: 200px;
+    width: 100%;
+    border: 0;
+    color: #989c9e;
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+    outline: none;
+    margin: 14px 0;
+    padding: 14px;
+    font-size: 14px;
+}
+.postMessage{
+    height: 150px;
+}
+select{
+    color: #989c9e;
+    width: 48%;
+    margin: 12px 0;
+    padding: 12px; 
+    border: 1px solid #989c9e;  
+    outline: none;
+    font-size: 14px;
+}
+select:focus{
+    border: 1px solid #76caf5;
+}
+
+.categories{
+    
+    
+}
+.flexContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexitem{
+    width:48%;
+}
+@media only screen and (max-width: 768px) {
+    .flexContainer{
+        flex-wrap: wrap;
+    }
+    .flexitem{
+        width:100%;
+        margin-bottom: 20px;
+    }
+} 
+.securityCode{
+    color: #989c9e;
+    background-color: #fff;
+    box-sizing: border-box;
+    outline: none;
+    padding: 14px;
+    font-size: 14px;
+    border: 1px solid #989c9e;
+    width: 100%;
+
+}
+.registerStyle{
+    font-size: 20px;
+    font-family: 'lobster';
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    padding: 14px;
+}
+
+.loginStyle{
+    font-size: 15px;
+    font-family: 'lobster';
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    padding: 14px;
+}
+.register{
+    color: #fff;
+    background-color: #76caf5;
+}
+.registerFacebook{
+    color: #fff;
+    background-color: #34495e;
+}
+.textDiv{
+    text-align: center;
+}
+.submit {
+ font-family: 'lobster';
+}
+.buttonFlex{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0 10px;
+    
+}
+.buttonFlex2 {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0 20px;
+}
+.fa-times{
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    .buttonFlex{
+        justify-content: center;
+    }
+    .postTitle{
+        display: flex;
+        justify-content: center;
+    }
+
+} 
+
+.submit{
+    cursor: pointer;
+    background-color: #76caf5;
+    border-radius: 2px;
+    padding: 10px 15px;
+    color: #ffffff;
+    font-size: 20px;
+    border: none;
+    position: relative;
+    right: 0;
+}
+
+.recaptcha{
+    background-color: #fff;
+    font-family: 'lobster';
+    padding: 18px 14px;
+    box-sizing: border-box;
+    width: 200px;
+    text-align: center;
+    color: #76caf5;
+    border: 1px solid #989c9e;
+    font: 20px;
+
+}
+
+.postItem{
+    
+width: 60%;
+background-color: #fff;
+padding: 10px 20px;
+margin: 20px auto;
+box-sizing: border-box;
+}
+
+.postFlexItem{
+    position: relative;
+    display: flex;
+}
+
+
+.postImage{
+    height: 120px;
+    padding: 10px 20px ;
+}
+
+.postContent{
+    padding-top: 10px;
+    position: relative;
+    padding-right: 50px;
+}
+
+.postContent > h1:hover{
+    color: #989c9e;
+    
+}
+
+.postContent > p{
+    text-align: justify;
+}
+
+.socialMedia{
+    position: absolute;
+    right: -0px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.fa-facebook-square , .fa-twitter-square , .fa-star{
+    color: #34495e;
+    font-size: 30px;
+    padding: 10px 0;
+}
+.flexContainer > p{
+    font-size: 16px;
+    color: #363838;
+}
+
+footer{
+    background-color: #34495e;
+    display: flex;
+    justify-content:space-evenly ;
+    color:white;
+    padding: 40px 15%;
+    margin-top : 60px ;
+    flex-wrap: wrap;
+    align-content:center ;
+}
+footer > div {
+    
+    margin: 10px;
+    
+}
+@media only screen and (max-width: 744px) {
+    .footerDiv4 {
+        margin-left: 30px;
+    }
+}
+.footerText{
+    color:white;
+    font-size: 1.4rem;
+    font-family: "Yrsa", Helvetica, Arial, sans-serif;
+}
+.fa-bars{
+    font-size: 30px;
+    color: white;
+}
+.fixedHeight{
+    height: 100vh;
+    osition: relative;
+}
+.policyFooter{
+    /* position: absolute;
+    bottom: 0;
+    width: 70%; */
+}
+.fa-user, .fa-envelope-open-text, .fa-info{
+    position: absolute;
+}
+
+
+.fa-comment-alt{
+    color: #34495e;
+    font-size: 40px;
+    margin-top: 5px;
+    position: relative;
+}
+.vex{
+    cursor: pointer;
+    background-color: #34495e;
+    padding: 7px 9px 8px;
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px 0 0 5px;
+    margin-right: -5px;
+    box-sizing: border-box;
+    font-family: 'lobster';
+    font-size: 0.9rem;
+    border: 1px solid #34495e;
+    
+}
+.number1{
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left:10px;
+    
+}
+.number2{
+    font-size: 0.9rem;
+    font-family: 'lobster';
+    color: #34495e;
+    background-color: white;
+    border: 1px solid #34495e;
+    padding: 7px 9px 8px;
+    box-sizing: border-box;
+    border-radius: 0 5px 5px 0;
+}
+@media only screen and (max-width: 450px) {
+    .commentLike{
+        flex-wrap: wrap;
+    }
+    .vexDiv2{
+        margin: 10px 0 10px 30px; 
+    }
+    
+}
+.commentStyle{
+    display: flex;
+    flex-direction: column;
+    align-content:center ;
+    margin-top: 15px
+}
+.comment{
+    cursor: pointer;
+    background-color: #34495e;
+    padding: 8px 9px;
+    color: #ffffff;
+    font-size: 14px;
+    border: none;
+    font-family: 'lobster';
+    border-radius: 5px;
+    margin-right: 5px;
+    box-sizing: border-box;
+    
+}
+.commentDown{
+    color: #34495e;
+    font-size: 25px;
+    align-self: center;
+    margin-top: -11px;
+    margin-right: 5px;
+}
+
+.vexDiv{
+    margin: 10px;
+}
+
+.commentLike{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.posterDetails{
+    text-align: center;
+    color: #989c9e;
+}
+.iconDiv{
+    height: 30px;
+    width: 20%;
+    border: 1px solid #f1f1f1;
+    background-color: black;
+}
+.postBy{
+    color: #34495e;
+    font-size: 15px;
+    font-family: 'Open Sans Light', sans-serif;
+}
+
+.fa-user{
+    font-size: 25px;
+    border: 1px solid #989c9e;
+    padding: 9px 10px;
+    color: #76caf5;
+    background-color: #f1f1f1;
+
+}
+.fa-envelope-open-text, .fa-info {
+    font-size: 25px;
+    border: 1px solid #989c9e;
+    padding: 9px 8px;
+    color: #76caf5;
+    background-color: #f1f1f1;
+
+}
+.fa-info {
+    font-size: 25px;
+    border: 1px solid #989c9e;
+    padding: 9px 16px;
+    color: #76caf5;
+    background-color: #f1f1f1;
+
+}
+.formDiv{
+    margin: 15px 0;
+}
+.loginFormContainer{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100vh;
+    background-color: #ecf0f1;
+    z-index: 3;
+    pointer-events: none;
+}
+
+
+.loginForm{
+    width: 20%;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    
+}
+.contactInput{
+    border: none;
+    color: #989c9e;
+    border: 1px solid #989c9e;
+    width: 90%;
+    margin-left: 41px; 
+    box-sizing: border-box;
+    outline: none;
+    padding: 14px;
+
+}
+.contactInput:focus{
+    border: 1px solid #989c9e;
+}
+.postItemDiv2{
+    text-align: center;
+}
+.msg{
+    border: 1px solid #989c9e;
+    resize: none;
+    height: 200px;
+    width: 95%;
+    color: #989c9e;
+    background-color: #fff;
+    box-sizing: border-box;
+    outline: none;
+    margin: 14px 0;
+    padding: 14px;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 601px) {
+    .hamburger{
+        display: none;
+ }
+ 
+}
+
+@media screen and (max-width: 992px) {
+     .postStory, .postItem {
+           width: 70%;
+    }
+    .fa-facebook-square , .fa-twitter-square , .fa-star{
+        font-size: 20px;
+  }
+  .msg{
+    width: 95%;
+}
+}
+
+ @media screen and (max-width: 600px) {
+    .postStory, .postItem {
+        width: 90%;
+ }
+ .header{
+    padding: 0 5%;
+ }
+ .desktopMenu{
+    display: none;
+}
+.miniHeader{
+    padding-right: 5%;
+}
+.postFlexItem{
+    flex-direction: column;
+}
+.logo {
+    height: 30px;
+    margin-top: 10px;
+}
+.fa-smile{
+    display: none;
+}
+.postImage {
+    width: 80%;
+    height: 40%;
+    padding: 10px 20px;
+  }
+
+.postItemDiv{
+    text-align: center;
+}
+.fa-facebook-square , .fa-twitter-square , .fa-star{
+    font-size: 20px;
+}
+.msg{
+    width: 100%;
+}
+}
+ 
+@media only screen and (max-width: 400px) {
+.fa-bars {
+    font-size: 25px;
+}
+.logo {
+    height: 20px;
+}
+.login{
+    font-size: 20px;
+}
+}
