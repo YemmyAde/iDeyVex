@@ -77,6 +77,9 @@ ul, li{
     align-items: center;
     height: 80px; 
 }
+.search{
+    width: 190px;
+}
 
 .logo{
     height: 40px;
@@ -432,19 +435,19 @@ box-sizing: border-box;
 }
 .fa-facebook-square , .fa-twitter-square , .fa-star{
     color: #34495e;
-    font-size: 30px;
+    font-size: 1.5rem;
     padding: 10px 0;
 }
 .flexContainer > p{
     font-size: 16px;
-    color: #363838;
+    color: var(--outerSpace);
 }
 
 footer{
-    background-color: #34495e;
+    background-color: var(--policeBlue);
     display: flex;
     justify-content:space-evenly ;
-    color:white;
+    color:var(--white);
     padding: 40px 15%;
     margin-top : 60px ;
     flex-wrap: wrap;
@@ -461,9 +464,9 @@ footer > div {
     }
 }
 .footerText{
-    color:white;
-    font-size: 1.4rem;
-    font-family: "Yrsa", Helvetica, Arial, sans-serif;
+    color:var(--white);
+    font-size: 1.85rem;
+    font-family:var(--Helvetica);
 }
 .fa-bars{
     font-size: 30px;
@@ -495,10 +498,11 @@ footer > div {
     padding: 7px 9px 8px;
     color: var(--white); 
     border: none;
+    border-radius: 5px 0 0 5px;
     margin-right: -5px;
     box-sizing: border-box;
     font-family: var(--openSans);
-    font-size: 1.05rem;
+    font-size: 1.0rem;
     border: 1px solid var(--policeBlue);
     
 }
@@ -510,12 +514,14 @@ footer > div {
     
 }
 .number2{
-    font-size: 1.05rem;
+    font-size: 1.0rem;
     font-family: var(--openSans);
     color: var(--policeBlue);
     background-color: var(--white);
+    border: 1px solid var(--policeBlue);
     padding: 7px 9px 8px;
     box-sizing: border-box;
+    border-radius: 0 5px 5px 0;
 }
 @media only screen and (max-width: 450px) {
     .commentLike{
@@ -537,7 +543,7 @@ footer > div {
     background-color: var(--policeBlue);
     padding: 8px 9px;
     color: var(--white);
-    font-size: 1.05rem;
+    font-size: 1.0rem;
     border: none;
     font-family:var(--openSans);
     border-radius: 5px;
@@ -555,8 +561,6 @@ footer > div {
 
 .vexDiv{
     margin: 10px;
-    border: 1px solid var(--policeBlue);
-    border-radius: 5px;
 }
 
 .commentLike{
@@ -716,7 +720,7 @@ footer > div {
            width: 70%;
     }
     .fa-facebook-square , .fa-twitter-square , .fa-star{
-        font-size: 20px;
+        font-size: 1.0rem;
   }
   .msg{
     width: 95%;
@@ -754,7 +758,7 @@ footer > div {
     text-align: center;
 }
 .fa-facebook-square , .fa-twitter-square , .fa-star{
-    font-size: 20px;
+    font-size: 1.0rem;
 }
 .msg{
     width: 100%;
