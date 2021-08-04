@@ -14,6 +14,7 @@
     --policeBlue: #34495e;
     --darkCharcoal: #333;
     --white: #fff;
+    --aquaMarine: #76caf5;
 }
 body{
     
@@ -39,7 +40,7 @@ h1{
 }
 
 h2{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: var(--Helvetica);
     font-size: 18px;
     line-height: 1.5;
     color: #fff;
@@ -69,13 +70,15 @@ ul, li{
 }
 .header{
     background-color: #34495e;
-    /* background-color: #697683; */
-    /* background-color: #000080; */
-    padding: 0 15%;
+    padding: 0 5%;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 80px; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 .search{
     width: 190px;
@@ -85,6 +88,7 @@ ul, li{
     height: 40px;
 }
 .login{
+    justify-self: flex-end;
     font-family: var(--Helvetica);
     font-size: 1.6rem;
     font-weight: 500;
@@ -105,9 +109,9 @@ ul, li{
     margin-left: -20px;
     z-index: 1;
     position: absolute;
-    top: 30px;
-    background-color: white;
-    box-shadow: 2px 2px 10px #76caf5;
+    top: 35px;
+    background-color: var(--white);
+    box-shadow: 2px 2px 10px var(--policeBlue);
     border-radius: 5px;
     padding: 10px 10px;
     
@@ -149,7 +153,12 @@ ul, li{
     justify-content: flex-end;
     align-items: center;
 }
-.miniHeader > input{
+.headerStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.miniHeaderDiv > input{
     background-color: #ecf0f1;
     color: #363838;
     font-size: 14px;
@@ -159,7 +168,7 @@ ul, li{
     border-radius: 3px;
     outline: none;
 }
-.miniHeader > span{
+.miniHeaderDiv > span{
     background-color: #34495e;
     border: 0 solid;
     border-radius: 3px;
@@ -207,7 +216,7 @@ ul, li{
 }
 
 .formStyle:focus{
-    border: 1px solid #76caf5;
+    
 }
 
 .space{
@@ -301,13 +310,13 @@ select:focus{
     outline: none;
     padding: 14px;
     font-size: 14px;
-    border: 1px solid #989c9e;
+    border: 1px solid var(--greyColor2);
     width: 100%;
 
 }
 .registerStyle{
     font-size: 20px;
-    font-family: 'lobster';
+    font-family: var(--Helvetica);
     border: none;
     width: 100%;
     box-sizing: border-box;
@@ -317,7 +326,7 @@ select:focus{
 
 .loginStyle{
     font-size: 15px;
-    font-family: 'lobster';
+    font-family: var(--Helvetica);
     border: none;
     width: 100%;
     box-sizing: border-box;
@@ -325,12 +334,12 @@ select:focus{
     padding: 14px;
 }
 .register{
-    color: #fff;
-    background-color: #76caf5;
+    color: var(--white);
+    background-color: var(--aquaMarine);
 }
 .registerFacebook{
-    color: #fff;
-    background-color: #34495e;
+    color: var(--white);
+    background-color: var(--policeBlue);
 }
 .textDiv{
     text-align: center;
@@ -367,11 +376,11 @@ select:focus{
 
 .submit{
     cursor: pointer;
-    background-color: #76caf5;
+    background-color: var(--aquaMarine);
     border-radius: 2px;
     padding: 10px 15px;
-    color: #ffffff;
-    font-size: 20px;
+    color: var(--white);
+    font-size: 1.25rem;
     border: none;
     position: relative;
     right: 0;
@@ -379,14 +388,14 @@ select:focus{
 
 .recaptcha{
     background-color: #fff;
-    font-family: 'lobster';
+    font-family: var(--Helvetica);
     padding: 18px 14px;
     box-sizing: border-box;
     width: 200px;
     text-align: center;
-    color: #76caf5;
+    color: var(--aquaMarine);
     border: 1px solid #989c9e;
-    font: 20px;
+    font: 1.25rem;
 
 }
 
@@ -458,14 +467,12 @@ footer > div {
     margin: 10px;
     
 }
-@media only screen and (max-width: 744px) {
-    .footerDiv4 {
-        margin-left: 30px;
-    }
-}
+
+
+
 .footerText{
     color:var(--white);
-    font-size: 1.85rem;
+    font-size: 1.1rem;
     font-family:var(--Helvetica);
 }
 .fa-bars{
@@ -585,28 +592,29 @@ footer > div {
     font-family: var(--openSans);
 }
 
-.fa-user{
+.fa-user, .fa-envelope-open-text, .fa-info{
     font-size: 25px;
-    border: 1px solid #989c9e;
     padding: 9px 10px;
     color: #76caf5;
-    background-color: #f1f1f1;
+    background-color: var(--offWhite);
+    top: 0;
+    left: 0;
 
 }
+
 .fa-envelope-open-text, .fa-info {
     font-size: 25px;
-    border: 1px solid #989c9e;
     padding: 9px 8px;
-    color: #76caf5;
-    background-color: #f1f1f1;
+    color: var(--aquaMarine);
+    background-color: var(--offWhite);
 
 }
 .fa-info {
     font-size: 25px;
-    border: 1px solid #989c9e;
+    position: absolute;
     padding: 9px 16px;
     color: #76caf5;
-    background-color: #f1f1f1;
+    background-color: var(--offWhite);
 
 }
 
@@ -629,21 +637,54 @@ footer > div {
  
 }
 .mobileNavMenu{
+    height: 100vh;
     position: fixed;
     top: 80px;
     left: 0;
     width:100%;
-    background-color: #ecf0f1; 
+    background-color: var(--white); 
     visibility: hidden;
     opacity: 0;
-    color: #34495e;
+    color: var(--policeBlue);
+    padding: 10px 0;
+}
+.colorIcon{
+    color: var(--greyColor2);
+}
+.displayFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menuText{
+    color: var(--greyColor2);
+    padding: 10px 20px;
+
+}
+.menuText >a , .displayFlex>p{
+    font-size: 0.9rem;
+}
+.menuText > li{
+    color:var(--greyColor2);
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-family: var(--openSans);
+    line-height: 25px;
 }
 .navShow{
     visibility: visible;
     opacity: 1;
+    /* z-index: 100; */
 }
 .formDiv{
-    margin: 15px 0;
+    border: 1px solid var(--policeBlue);
+    position: relative;
+    margin: 10px 0;
+    padding: 22px 0;
+    width: 100%;
+}
+.formTextArea{
+    padding: 0;
 }
 .modalOpen, .modalClose{
     cursor: pointer;
@@ -685,24 +726,28 @@ footer > div {
     
 }
 .contactInput{
+    position: absolute;
     border: none;
-    color: #989c9e;
-    border: 1px solid #989c9e;
-    width: 90%;
-    margin-left: 41px; 
-    box-sizing: border-box;
+    left: 40px;
+    top: 0;
     outline: none;
-    padding: 14px;
+    height: 16px;
+    margin: 16px;
+    width: 70%;
+    font-size: 16px;
+    color: var(--greyColor2);
+    font-family: var(--openSans);
+   
 
 }
-.contactInput:focus{
+/* .contactInput:focus{
     border: 1px solid #989c9e;
-}
+} */
 .postItemDiv2{
     text-align: center;
 }
 .msg{
-    border: 1px solid #989c9e;
+    border: none;
     resize: none;
     height: 200px;
     width: 95%;
@@ -720,11 +765,8 @@ footer > div {
            width: 70%;
     }
     .fa-facebook-square , .fa-twitter-square , .fa-star{
-        font-size: 1.0rem;
+        font-size: 1.4rem;
   }
-  .msg{
-    width: 95%;
-}
 }
 
  @media screen and (max-width: 600px) {
@@ -747,7 +789,12 @@ footer > div {
     height: 30px;
     margin-top: 10px;
 }
-
+ .footer {
+     justify-content: flex-start;
+}
+.footerText{
+    font-size: 1.0rem;
+}
 .postImage {
     width: 80%;
     height: 40%;
@@ -758,11 +805,9 @@ footer > div {
     text-align: center;
 }
 .fa-facebook-square , .fa-twitter-square , .fa-star{
-    font-size: 1.0rem;
+    font-size: 1.4rem;
 }
-.msg{
-    width: 100%;
-}
+
 }
  
 @media only screen and (max-width: 400px) {
@@ -772,7 +817,4 @@ footer > div {
 .logo {
     height: 20px;
 }
-/* .login{
-    font-size: 20px;
-} */
 }
