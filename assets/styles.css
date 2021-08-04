@@ -79,6 +79,7 @@ ul, li{
     width: 100%;
     top: 0;
     left: 0;
+    z-index:2;
 }
 .search{
     width: 190px;
@@ -86,6 +87,7 @@ ul, li{
 
 .logo{
     height: 40px;
+    margin-left: -60px;
 }
 .login{
     justify-self: flex-end;
@@ -539,6 +541,9 @@ footer > div {
     }
     
 }
+.margin{
+    margin-top: 150px;
+}
 .commentStyle{
     display: flex;
     flex-direction: column;
@@ -617,12 +622,16 @@ footer > div {
     background-color: var(--offWhite);
 
 }
-
+.hamburger{
+    margin-left: -50px; 
+}
 @media screen and (min-width: 601px) {
     .hamburger{
         display: none;
         position: fixed;
+        
  }
+ 
 }
  @media screen and (max-width: 601px) {
  .navDropdown{
@@ -634,8 +643,12 @@ footer > div {
     display: none;
 
 }
+.logo{
+    margin-left: 0;
+}
  
 }
+
 .mobileNavMenu{
     height: 100vh;
     position: fixed;
@@ -644,7 +657,7 @@ footer > div {
     width:100%;
     background-color: var(--white); 
     visibility: hidden;
-    opacity: 0;
+    opacity: 1;
     color: var(--policeBlue);
     padding: 10px 0;
 }
@@ -662,7 +675,7 @@ footer > div {
 
 }
 .menuText >a , .displayFlex>p{
-    font-size: 0.9rem;
+    font-size: 1.0rem;
 }
 .menuText > li{
     color:var(--greyColor2);
@@ -698,6 +711,7 @@ footer > div {
     background-color: rgba(0,0,0,0.4); 
     visibility: hidden;
     opacity: 0;
+    z-index: 50;
 }
 
 .loginForm{
@@ -734,7 +748,7 @@ footer > div {
     height: 16px;
     margin: 16px;
     width: 70%;
-    font-size: 16px;
+    font-size: 14px;
     color: var(--greyColor2);
     font-family: var(--openSans);
    

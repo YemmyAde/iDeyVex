@@ -12,53 +12,107 @@
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 	</style>
-	<title>Document</title>
+	<title>I DEY VEX</title>
 </head>
 
 <body>
 	<div class='header'>
-		<div class='hamburger'> <i class="fas fa-bars"></i> </div>
-		<a href="index.html"><img src='assets/images/logo.png' alt='logo' class='logo' /> </a>
+		<div class='hamburger'>
+			<i class="fas fa-bars menuModalOpen"></i>
+			<ul class='mobileNavMenu'>
+				<li class='menuText'>
+					<a href='submit.html'> Submit </a>
+				</li>
+				<li class='menuText'>
+					<div class='displayFlex'>
+						<p> Categories</p> <i class="fas fa-caret-down colorIcon"></i>
+					</div>
+					<ul class='menuText'>
+						<li> Business</li>
+						<li> Day to Day</li>
+						<li> Family </li>
+						<li> Politics</li>
+						<li> Relationship</li>
+						<li> School</li>
+						<li> Sport</li>
+					</ul>
+				</li>
+
+			</ul>
+
+		</div>
+		<a href="index.html"><img src='./assets/images/logo.png' alt='logo' class='logo' /> </a>
 		<nav class='nav-menu'>
 			<div class='deskopMenu'>
 				<ul>
 					<li>
 						<div class='navMenu'>
-						 <span class='login'> Login </span>
-						  <i class="fas fa-smile"></i> 
-						  <i class="fas fa-caret-down"></i>
-							<div class='navDropdown'>
+							<span class='login hide'> Login </span>
+							<i class="fas fa-smile"></i>
+							<i class="fas fa-caret-down"></i>
+							<div class='navDropdown menuModal'>
+
 								<ul>
-									<!-- <li class='navItem'> <button id='loginOpen' class='navItemText'>Login </button></li> -->
-									<li class='navItem'><a href='sign-up.html' class='navItemText'> Login</a></li>
+									<li class='navItem'>
+										<p class='navItemText  modalOpen'> Login </p>
+									</li>
 									<li class='navItem'><a href='sign-up.html' class='navItemText'> Sign Up</a></li>
 								</ul>
+
 							</div>
 						</div>
-						
+
 					</li>
 
 				</ul>
 			</div>
-			
+
 		</nav>
 	</div>
+	<div class='loginFormContainer'>
+		<div class='loginForm'>
+			<div class='flexContainer'>
+				<h1 class='postTitle'> Login</h1>
+				<i class="fas fa-times modalClose"></i>
+			</div>
+			<form action="" method="" class=" input">
+				<input type='text' placeholder='Username' class='loginInput'>
+				<input type='password' placeholder='password' class='loginInput'>
 
-	
-	<div class='postItem'>
-        <h1 class='postTitle'> Terms of use </h1>
-    <p> 
-        Disclaimer: Every Ideyvex.com member is solely responsible for anything that he/she posts or upload on ideyvex.com. under no circumstances is ideyvex.com or its handlers responsible for posts or comments or uploads by its members
-    </p>
-    </div>
+				<div class='buttonFlex2'><button type='' class='register loginStyle'> Login With Your Username</button>
+				</div>
+				<div class='textDiv2'>
+					<h3> OR </h3>
+				</div>
+				<div class='buttonFlex'><button type='' class='registerFacebook loginStyle'>Login with Facebook
+					</button> </div>
+
+
+				<p> Recover Username/password </p>
+				<p> Don't have an account? <a href='sign-up.html'> Sign Up </a></p>
+			</form>
+		</div>
+	</div>
+
+
+	<div class='postItem margin'>
+		<h1 class='postTitle'> Terms of use </h1>
+		<p>
+			Disclaimer: Every Ideyvex.com member is solely responsible for anything that he/she posts or upload on
+			ideyvex.com. under no circumstances is ideyvex.com or its handlers responsible for posts or comments or
+			uploads by its members
+		</p>
+	</div>
 
 	<footer>
-		<div class='footerDiv1'> <p class='footerText'>  © 2021 IDEYVEX </p></div>
+		<div class='footerDiv1'>
+			<p class='footerText'> © 2021 IDEYVEX </p>
+		</div>
 		<div class='footerDiv2'> <a href='privacy-policy.html' class='footerText'>Privacy Policy </a></div>
 		<div class='footerDiv3'> <a href='terms-of-use.html' class='footerText'>Terms of Use </a></div>
 		<div class='footerDiv4'> <a href='contact-us.html' class='footerText'>Contact Us </a></div>
 	</footer>
-
+	<script src="assets/app.js"></script>
 </body>
 
 </html>

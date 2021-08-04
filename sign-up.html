@@ -1,63 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles.css">
-    <script src="https://kit.fontawesome.com/b35dfa58ee.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/styles.css">
+	<script src="https://kit.fontawesome.com/b35dfa58ee.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Yrsa:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-	</style>
-    <title>Document</title>
+	</style>I DEY EVX</title>
 </head>
+
 <body>
 	<div class='header'>
-		<div class='hamburger'> <i class="fas fa-bars"></i> </div>
-		<a href="index.html"><img src='assets/images/logo.png' alt='logo' class='logo' /> </a>
+		<div class='hamburger'>
+			<i class="fas fa-bars menuModalOpen"></i>
+			<ul class='mobileNavMenu'>
+				<li class='menuText'>
+					<a href='submit.html'> Submit </a>
+				</li>
+				<li class='menuText'>
+					<div class='displayFlex'>
+						<p> Categories</p> <i class="fas fa-caret-down colorIcon"></i>
+					</div>
+					<ul class='menuText'>
+						<li> Business</li>
+						<li> Day to Day</li>
+						<li> Family </li>
+						<li> Politics</li>
+						<li> Relationship</li>
+						<li> School</li>
+						<li> Sport</li>
+					</ul>
+				</li>
+
+			</ul>
+
+		</div>
+		<a href="index.html"><img src='./assets/images/logo.png' alt='logo' class='logo' /> </a>
 		<nav class='nav-menu'>
 			<div class='deskopMenu'>
 				<ul>
 					<li>
 						<div class='navMenu'>
-						 <span class='login'> Login </span>
-						  <i class="fas fa-smile"></i> 
-						  <i class="fas fa-caret-down"></i>
-							<div class='navDropdown'>
+							<span class='login hide'> Login </span>
+							<i class="fas fa-smile"></i>
+							<i class="fas fa-caret-down"></i>
+							<div class='navDropdown menuModal'>
+
 								<ul>
-									<li class='navItem'> <a href='login.html' class='navItemText'>Login </a></li>
+									<li class='navItem'>
+										<p class='navItemText  modalOpen'> Login </p>
+									</li>
 									<li class='navItem'><a href='sign-up.html' class='navItemText'> Sign Up</a></li>
 								</ul>
+
 							</div>
 						</div>
-						
+
 					</li>
 
 				</ul>
 			</div>
-			
+
 		</nav>
 	</div>
-	<div class="miniHeader">
-		<input type="text" placeholder="Search for IDEYVEX post">
-		<span> <i class="fas fa-search"></i></span>
+	<div class='loginFormContainer'>
+		<div class='loginForm'>
+			<div class='flexContainer'>
+				<h1 class='postTitle'> Login</h1>
+				<i class="fas fa-times modalClose"></i>
+			</div>
+			<form action="" method="" class=" input">
+				<input type='text' placeholder='Username' class='loginInput'>
+				<input type='password' placeholder='password' class='loginInput'>
 
+				<div class='buttonFlex2'><button type='' class='register loginStyle'> Login With Your Username</button>
+				</div>
+				<div class='textDiv2'>
+					<h3> OR </h3>
+				</div>
+				<div class='buttonFlex'><button type='' class='registerFacebook loginStyle'>Login with Facebook
+					</button> </div>
+
+
+				<p> Recover Username/password </p>
+				<p> Don't have an account? <a href='sign-up.html'> Sign Up </a></p>
+			</form>
+		</div>
 	</div>
-	<div class='postStory'>
+
+	<div class='postStory margin'>
 		<h1 class='postTitle'> Sign Up</h1>
 		<form action="" method="post" class="postForm input">
 			<div class='flexContainer'>
 				<input type='text' placeholder='Enter your Nick Name' class='securityCode2 space flexitem'>
 				<input type='email' placeholder='Enter a valid email address' class='securityCode2 space flexitem'>
-			</div> 
+			</div>
 			<div class='flexContainer'>
 				<input type='password' placeholder='Enter password' class='securityCode2 space flexitem'>
 				<input type='password' placeholder='Confirm password' class='securityCode2 space flexitem'>
 			</div>
 
-			
-		
+
+
 			<div class='flexContainer'>
 				<div class='flexitem'>
 					<p> Can't read the image? <a href="#"> Click here to refresh </a> </p>
@@ -69,16 +117,22 @@
 				</div>
 			</div>
 			<div class='buttonFlex'><button type='' class='register registerStyle'> Register </button> </div>
-			<div class='textDiv'> <h3> OR </h3> </div>
-			<div class='buttonFlex2'><button type='' class='registerFacebook registerStyle'> Register with Facebook</button> </div>
+			<div class='textDiv'>
+				<h3> OR </h3>
+			</div>
+			<div class='buttonFlex2'><button type='' class='registerFacebook registerStyle'> Register with
+					Facebook</button> </div>
 		</form>
 	</div>
 	<footer>
-		<div class='footerDiv1'> <p class='footerText'>  © 2021 IDEYVEX </p></div>
+		<div class='footerDiv1'>
+			<p class='footerText'> © 2021 IDEYVEX </p>
+		</div>
 		<div class='footerDiv2'> <a href='privacy-policy.html' class='footerText'>Privacy Policy </a></div>
 		<div class='footerDiv3'> <a href='terms-of-use.html' class='footerText'>Terms of Use </a></div>
 		<div class='footerDiv4'> <a href='contact-us.html' class='footerText'>Contact Us </a></div>
 	</footer>
-
+	<script src="assets/app.js"></script>
 </body>
+
 </html>
